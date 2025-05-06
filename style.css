@@ -1,0 +1,504 @@
+* {
+  box-sizing: border-box;
+}
+/* body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  transition: background-color 0.2s;
+  background-color: gray;
+  overflow-x: hidden;
+}
+
+.toggler {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.toggler + .toggler-background {
+  cursor: pointer;
+  display: block;
+  width: 6rem;
+  padding: 0.2rem;
+  background-color: #021322;
+  border-radius: 999px;
+}
+
+.big-circle {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #fff601;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, transform 0.3s;
+}
+
+.small-circle {
+  background-color: #965003;
+  height: 60%;
+  width: 60%;
+  border-radius: 50%;
+}
+
+.toggler:checked + .toggler-background .big-circle {
+  background-color: #021322;
+  transform: translate(200%, 0);
+  cursor: pointer;
+}
+
+.toggler:checked + .toggler-background .small-circle {
+  background-color: #fff601;
+}
+
+.toggler:checked + .toggler-background {
+  background-color: #965003;
+}
+
+body:has(.toggler:checked) {
+  background-color: #021322;
+}
+.Myclass {
+  background-color: red;
+}
+
+.rect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 250px;
+  border-radius: 5px;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-size: 2rem;
+  position: absolute;
+  
+} */
+
+/* body {
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+/* .square {
+  background: #1b1b32;
+  width: 10rem;
+  aspect-ratio: 1/1;
+  margin-bottom: 20px;
+}
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+} */
+
+/* .box {
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  background-color: orange;
+}
+.box1 {
+  width: 50%;
+  height: 100vh;
+  background-color: pink;
+} */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* .hero {
+  height: 100vh;
+  background-color: orange;
+  width: calc(100% - 50%);
+  margin: 0 auto;
+} */
+/* .hero div {
+  width: 50vw;
+  height: 100vh;
+  background-color: pink;
+} */
+/* .hero div h1{
+  font-size: 5vw;
+} */
+
+/* .container p:last-of-type {
+  color: red;
+  background-color: orange;
+}
+.container p:last-child {
+  color: pink;
+} */
+/* input:focus {
+  outline: 2px solid darkgreen;
+  border-radius: 4px;
+} */
+/* .checkbox:checked {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+} */
+/* input:focus {
+  border: 2px solid purple;
+  outline: none;
+}
+input:valid {
+  border: 3px solid green;
+}
+input:invalid {
+  border: 4px solid crimson;
+}
+input:required {
+  border: 4px solid orange;
+}
+
+.text-input:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+a:any-link {
+  color: orange;
+}
+/* :root{
+  background-color: black;
+} */
+/* :empty{
+ display: none;
+} */
+/* section:target {
+  background-color: green;
+  border: 2px solid green;
+  padding: 10px;
+}
+th,
+td {
+  border: 3px solid orange;
+  padding: 20px;
+}
+tr:nth-child(even) {
+  background-color: pink;
+}
+tr:nth-child(odd) {
+  background-color: lightgreen;
+}
+li:first-child {
+  background-color: orangered;
+}
+
+li:last-child {
+  background-color: lightgreen;
+}
+
+section p:first-of-type {
+  background-color: lightgreen;
+}
+
+section p:last-of-type {
+  background-color: lightblue;
+}
+
+:where(h1, h2, h3) {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: red;
+}
+div:has(h1) {
+  color: pink;
+  border: 2px solid gray;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  color: white;
+  position: relative;
+}
+
+button::before {
+  content: "❤";
+  position: absolute;
+  right: 5px;
+  bottom: 6px;
+  transition: transform 0.3s ease;
+}
+button:hover::before {
+  transform: translateX(10px);
+}
+button::first-letter {
+  font-size: 2rem;
+}
+
+li::marker {
+  color: crimson;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+button.primary {
+  background-color: deepskyblue;
+}
+
+button:not(.primary) {
+  background-color: grey;
+}
+input::spelling-error {
+  color: orangered;
+}
+.box3 {
+  height: 400px;
+  background: radial-gradient(circle, red, blue, pink, green, purple);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgreen;
+} */
+
+/* .box1 {
+  margin-bottom: 20px;
+  background-color: lightblue;
+}
+.box2 {
+  margin-top: 30px;
+  background-color: lightgreen;
+}
+
+.parent {
+
+  background-color: orange;
+  border:  2px solid black;
+  padding: 1px;
+} */
+/* .child {
+  margin-top: 50px;
+  background-color: lightpink;
+}
+
+.empty-block {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 0;
+}
+.next-block {
+  background-color: lightgray;
+}
+
+#red-div {
+  box-sizing: content-box;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border: 4px solid black;
+  margin: 10px;
+  background-color: red;
+}
+
+#blue-div {
+  box-sizing: border-box;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border: 4px solid black;
+  margin: 10px;
+  background-color: blue;
+  filter: contrast(300%) brightness(110%) sepia(30%); 
+  box-sizing: border-box;
+  position: absolute;
+  filter: blur();
+  background-color: lightpink;
+  overflow: hidden;
+}  */
+
+main {
+  /* width: 200px; */
+  display: flex;
+  border: 2px solid red;
+  flex-flow: wrap-reverse;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+div {
+  width: 80px;
+  height: 50px;
+}
+
+#first-div {
+  background-color: #4d70b2;
+}
+
+#second-div {
+  background-color: #5c4db2;
+}
+
+#third-div {
+  background-color: #4da3b2;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+nav {
+  width: 30%;
+  background-color: orange;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  transform: translate(-100%);
+  transition: transform 1.3s ease;
+  animation: rotate 1.3s infinite;
+  
+}
+nav ul {
+  display: inline-block;
+}
+
+header h1{
+  text-shadow:  3px 2px 3px #00ffc3, 
+  -3px -2px 3px #0077ff, 
+  5px 4px 3px #dee7e5;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  
+}
+/* @keyframes rotate {
+  0% {
+    transform: translate(-20%);
+  }
+  50% {
+    transform: translate(-50%);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+} */
+
+/* nav {
+  width: 30%;
+  background-color: orange;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  transition: transform 1.3s ease;
+  animation: rotate 1.3s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateX(-20%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
+
+
+/* .container{
+  border: 2px solid red;
+}
+.container::after {
+  content: "";  
+  display: block;
+  clear: both;
+}
+img{
+  float: left;
+  margin-right: 680px;
+} */
+
+.relative{
+  position: relative;
+  top: 30px;
+  left: 30px;
+ 
+}
+.positioned{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: coral;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.box1 {
+  position: absolute;
+  z-index: 1;
+  background: lightcoral;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.box2 {
+  position: absolute;
+  z-index: 3;
+  background: gold;
+  top: 40px;
+  left: 40px;
+  width: 100px;
+  height: 100px;
+}
+
+.box3 {
+  position: absolute;
+  z-index: 2;
+  background: lightgreen;
+  top: 60px;
+  left: 60px;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient();
+
+}
